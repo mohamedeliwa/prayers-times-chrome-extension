@@ -1,0 +1,117 @@
+<html>
+
+<head>
+	<title>Prayers Time</title>
+</head>
+<style>
+	body {
+		text-align: center;
+		font-size: 16px;
+		padding: 10px 20px 0 20px;
+		margin: 0;
+		display: flex;
+		flex-direction: column;
+		/* justify-content: center; */
+		align-items: center;
+		/* min-height: 180px; */
+		/* width: 384px; */
+	}
+
+	/* header {
+		background: grey; 
+		border: 1px solid rgb(231, 231, 231);
+		 border-radius: 3px; 
+		 box-shadow: 3px 5px 5px #eee; 
+		width: 50%; 
+		 margin: 0 0 10px 0;
+	} */
+	header h1 {
+		margin: 0;
+		color: #365DA0;
+	}
+
+	main {
+		background-color: rgba(255, 255, 255, 0.973);
+		/* padding: 50px; */
+	}
+
+	main ul {
+		list-style: none;
+		padding: 0;
+		/* margin: 0; */
+	}
+
+	main ul li {
+		height: 50px;
+		width: 250px;
+		border: 1px solid rgb(231, 231, 231);
+		border-radius: 3px;
+		margin: 5px auto;
+		box-shadow: 3px 5px 5px #eee;
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+	}
+
+	/* .prayer {
+		font-weight: 900; 
+	} */
+
+	.time {
+		color: #365DA0;
+		font-weight: 900;
+		background-color: #f4f4f4;
+		padding: 5px;
+		border-radius: 3px;
+
+	}
+</style>
+
+<body>
+	<header>
+		<h1>Prayers Times</h1>
+		<!-- in case you want to import images in the extension -->
+		<!-- <img src="images/logo.png" alt="log" /> -->
+	</header>
+	<main>
+		<ul>
+			<li>
+				<span class="prayer">Imsak </span>
+				<span id="time-imsak" class="time">00:00</span>
+			</li>
+			<li>
+				<span class="prayer">Fajr </span>
+				<span id="time-fajr" class="time">00:00</span>
+			</li>
+			<li>
+				<span class="prayer">Sunrise </span>
+				<span id="time-sunrise" class="time">00:00</span>
+			</li>
+			<li>
+				<span class="prayer">Dhuhr </span>
+				<span id="time-duhr" class="time">00:00</span>
+			</li>
+			<li>
+				<span class="prayer">Asr </span>
+				<span id="time-asr" class="time">00:00</span>
+			</li>
+			<li>
+				<span class="prayer">Sunset </span>
+				<span id="time-sunset" class="time">00:00</span>
+			</li>
+			<li>
+				<span class="prayer">Maghrib </span>
+				<span id="time-maghrib" class="time">00:00</span>
+			</li>
+			<li>
+				<span class="prayer">Isha </span>
+				<span id="time-isha" class="time">00:00</span>
+			</li>
+		</ul>
+	</main>
+
+	<!-- In case you want javascript to be in a seperate file -->
+	<script src="popup.js"></script>
+</body>
+
+</html>
